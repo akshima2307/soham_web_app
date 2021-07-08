@@ -2,162 +2,156 @@ export const COMMENTS =
 [
     {
         id: 0,
-        dishId: 0,
-        rating: 5,
+        postId: 0,
         comment: "Imagine all the eatables, living in conFusion!",
-        author: "John Lemon",
-        date: "2012-10-16T17:57:28.556094Z"
+        artistName: "John Lemon",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 1,
-        dishId: 0,
-        rating: 4,
+        postId: 0,
         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-        author: "Paul McVites",
-        date: "2014-09-05T17:57:28.556094Z"
+        artistName: "Paul McVites",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 2,
-        dishId: 0,
-        rating: 3,
+        postId: 1,
         comment: "Eat it, just eat it!",
-        author: "Michael Jaikishan",
-        date: "2015-02-13T17:57:28.556094Z"
+        artistName: "Michael Jaikishan",
+        artistImg: "/img/user-2.jpg"
     },
     {
         id: 3,
-        dishId: 0,
-        rating: 4,
+        postId: 1,
         comment: "Ultimate, Reaching for the stars!",
-        author: "Ringo Starry",
-        date: "2013-12-02T17:57:28.556094Z"
+        artistName: "Ringo Starry",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 4,
-        dishId: 0,
-        rating: 2,
+        postId: 2,
         comment: "It's your birthday, we're gonna party!",
-        author: "25 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        artistName: "25 Cent",
+        artistImg: "/img/user-1.jpg"
     },
     {
      id: 5,
-     dishId: 1,
-     rating: 5,
+     postId: 2,
      comment: "Imagine all the eatables, living in conFusion!",
-     author: "John Lemon",
-     date: "2012-10-16T17:57:28.556094Z"
+     artistName: "John Lemon",
+     artistImg: "/img/user-3.jpg"
     },
     {
      id: 6,
-     dishId: 1,
-     rating: 4,
+     postId: 3,
      comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-     author: "Paul McVites",
-     date: "2014-09-05T17:57:28.556094Z"
+     artistName: "Paul McVites",
+     artistImg: "/img/user-4.jpg"
     },
     {
      id: 7,
-     dishId: 1,
-     rating: 3,
+     postId: 3,
      comment: "Eat it, just eat it!",
-     author: "Michael Jaikishan",
-     date: "2015-02-13T17:57:28.556094Z"
+     artistName: "Michael Jaikishan",
+     artistImg: "/img/user-3.jpg"
     },
     {
      id: 8,
-     dishId: 1,
-     rating: 4,
+     postId: 4,
      comment: "Ultimate, Reaching for the stars!",
-     author: "Ringo Starry",
-     date: "2013-12-02T17:57:28.556094Z"
+     artistName: "Ringo Starry",
+     artistImg: "/img/user-2.jpg"
     },
     {
      id: 9,
-     dishId: 1,
-     rating: 2,
+     postId: 4,
      comment: "It's your birthday, we're gonna party!",
-     author: "25 Cent",
-     date: "2011-12-02T17:57:28.556094Z"
+     artistName: "25 Cent",
+     artistImg: "/img/user-1.jpg"
     },
     {
         id: 10,
-        dishId: 2,
-        rating: 5,
+        postId: 4,
         comment: "Imagine all the eatables, living in conFusion!",
-        author: "John Lemon",
-        date: "2012-10-16T17:57:28.556094Z"
+        artistName: "John Lemon",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 11,
-        dishId: 2,
-        rating: 4,
+        postId: 5,
         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-        author: "Paul McVites",
-        date: "2014-09-05T17:57:28.556094Z"
+        artistName: "Paul McVites",
+        artistImg: "/img/user-4.jpg"
     },
     {
         id: 12,
-        dishId: 2,
-        rating: 3,
+        postId: 6,
         comment: "Eat it, just eat it!",
-        author: "Michael Jaikishan",
-        date: "2015-02-13T17:57:28.556094Z"
+        artistName: "Michael Jaikishan",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 13,
-        dishId: 2,
-        rating: 4,
+        postId: 7,
         comment: "Ultimate, Reaching for the stars!",
-        author: "Ringo Starry",
-        date: "2013-12-02T17:57:28.556094Z"
+        artistName: "Ringo Starry",
+        artistImg: "/img/user-2.jpg"
     },
     {
         id: 14,
-        dishId: 2,
-        rating: 2,
+        postId: 7,
         comment: "It's your birthday, we're gonna party!",
-        author: "25 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        artistName: "25 Cent",
+        artistImg: "/img/user-1.jpg"
     },
     {
         id: 15,
-        dishId: 3,
-        rating: 5,
+        postId: 8,
         comment: "Imagine all the eatables, living in conFusion!",
-        author: "John Lemon",
-        date: "2012-10-16T17:57:28.556094Z"
+        artistName: "John Lemon",
+        artistImg: "/img/user-4.jpg"
     },
     {
         id: 16,
-        dishId: 3,
-        rating: 4,
+        postId: 9,
         comment: "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-        author: "Paul McVites",
-        date: "2014-09-05T17:57:28.556094Z"
+        artistName: "Paul McVites",
+        artistImg: "/img/user-1.jpg"
     },
     {
         id: 17,
-        dishId: 3,
-        rating: 3,
+        postId: 9,
         comment: "Eat it, just eat it!",
-        author: "Michael Jaikishan",
-        date: "2015-02-13T17:57:28.556094Z"
+        artistName: "Michael Jaikishan",
+        artistImg: "/img/user-2.jpg"
     },
     {
         id: 18,
-        dishId: 3,
-        rating: 4,
+        postId: 10,
         comment: "Ultimate, Reaching for the stars!",
-        author: "Ringo Starry",
-        date: "2013-12-02T17:57:28.556094Z"
+        artistName: "Ringo Starry",
+        artistImg: "/img/user-3.jpg"
     },
     {
         id: 19,
-        dishId: 3,
-        rating: 2,
+        postId: 10,
         comment: "It's your birthday, we're gonna party!",
-        author: "25 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
-    }
+        artistName: "25 Cent",
+        artistImg: "/img/user-1.jpg"
+    },
+    {
+        id: 20,
+        postId: 11,
+        comment: "Eat it, just eat it!",
+        artistName: "Michael Jaikishan",
+        artistImg: "/img/user-2.jpg"
+    },
+    {
+        id: 21,
+        postId: 11,
+        comment: "Ultimate, Reaching for the stars!",
+        artistName: "Ringo Starry",
+        artistImg: "/img/user-3.jpg"
+    },
 ];

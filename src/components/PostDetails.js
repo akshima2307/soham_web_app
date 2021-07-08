@@ -1,5 +1,9 @@
 import React from 'react';
 import '../css/artDescription.css';
+import { Link } from 'react-router-dom';
+
+// Icons
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
 function RenderImg({post}){
@@ -9,10 +13,10 @@ function RenderImg({post}){
 };
 
 function RenderComment({comments}){
-        if (comments == null) {
-          return(<div></div>);
-        }
-        const comm = comments.map((comment) => {
+    if (comments == null) {
+        return(<div></div>);
+    }
+    const comm = comments.map((comment) => {
           return(
             <div class="comment" key={comment.id}>
                 <img src={comment.artistImg} alt="" />
@@ -22,16 +26,12 @@ function RenderComment({comments}){
                 </span>
             </div>
           );
-    
-    
-        })
-    
-        return (
-            <div>
-                {comm}
-            </div>  
-        );
-    
+    })
+    return (
+        <ul>
+            {comm}
+        </ul>
+    );
 };
 
 function RenderPostInfo({post}){
@@ -51,6 +51,7 @@ function RenderPostInfo({post}){
                         <img src={post.artistImg} alt="" />
                         <span>
                             {post.artistName}
+                            <br/>
                             <small>{post.artistFollowers} followers</small>
                         </span>
                     </div>
@@ -63,14 +64,12 @@ function RenderPostInfo({post}){
 };
 
 const PostDetails = (props) =>{
-
         if (props.post == null) {
         return (<div></div>)
         }
-        
-
         return(
-            <section class="art">                
+            <section class="art">    
+                <Link to="/homePage/posts" className="back_icon_container"><ArrowBackIcon className="back_icon"/></Link>            
                 <div class="art_img">
                     <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     <RenderImg post={props.post} />
@@ -112,12 +111,12 @@ const PostDetails = (props) =>{
                     <div class="container--tabs">
                         <section class="row">
                             <ul class=" nav-tabs">
-                                <li class="active"><a href="#tab-1">{props.post.comments.length} Comments</a></li>
+                                <li class="active"><a href="#tab-1">{props.comments.length} Comments</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div id="tab-1" class="tab-pane active">
+                                <div id="tab-1" class="tab-pane active" style={{padding: 0,}}>
                                     {/* Comment */}
-                                    <RenderComment comments={props.post.comments}/>
+                                    <RenderComment comments ={props.comments}/>
                                     <div class="user_comment">
                                         <img src={props.post.artistImg} alt="" />
                                         <input type="text" placeholder="Add a comment..." />

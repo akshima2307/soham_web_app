@@ -1,13 +1,5 @@
 import '../css/about.css';
 
-function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-};
-  
-const img = importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/));
-
 function About(){
     return(
         <section className="about">

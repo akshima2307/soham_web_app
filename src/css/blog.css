@@ -24,9 +24,9 @@
 .blog_card{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: max-content;
+    min-height: 25rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 3rem;
 }
 .blog_card-img{

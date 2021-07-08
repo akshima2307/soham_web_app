@@ -1,11 +1,15 @@
 import React from 'react';
-import MainComponent from './components/MainComponent';
+import LandingPage from './components/LandingPage';
+import { BrowserRouter } from 'react-router-dom';
+
 
 
 class App extends React.Component{
     render(){
         return(
-            <MainComponent />
+            <BrowserRouter>
+                <LandingPage />
+            </BrowserRouter>
         );  
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/homePage.css';
+import { Link, useRouteMatch } from 'react-router-dom';
 
 
 // Icons
@@ -10,36 +11,40 @@ import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
 import SearchIcon from '@material-ui/icons/Search';
 
 
-function RenderMenuItem({post, onClick}){
+function RenderPosts({post, onClick}){
+    let match = useRouteMatch();
     return(
-        <div className="post-card" key={post.id} onClick={() => onClick(post.id)}>
-            <img src={post.image} alt="" />
-            <InsertPhotoIcon className="fa fa-picture-o post_picture-icon" />
-            <span className="post-date">
-                <CalendarTodayIcon className="post_calender-icon" />
-                <span>{post.date}</span> 
-            </span>
-            <span className="post-heading">{post.name} </span>
-            <div className="post-info">
-                <img src={post.artistImg} alt="" />
-                <span className="post-info-name">{post.artistName}</span>
-            </div>
-            <div className="post-info-likesView">
-                <small><ThumbUpOutlinedIcon />&nbsp;<span>{post.likes}</span></small>
-                <small><RemoveRedEyeIcon/>&nbsp;<span>{post.views}</span></small>
-            </div>
+        <div className="post-card" key={post.id}>
+            <Link style={{textDecoration: 'none'}} to={`${match.url}/${post.id}`}>
+                <img className="post-img" src={post.image} alt="" />
+            </Link>
+                <InsertPhotoIcon className="fa fa-picture-o post_picture-icon" />
+                <span className="post-date">
+                    <CalendarTodayIcon className="post_calender-icon" />
+                    <span>{post.date}</span> 
+                </span>
+                <span className="post-heading">{post.name} </span>
+                <div className="post-info">
+                    <img src={post.artistImg} alt="" />
+                    <span className="post-info-name">{post.artistName}</span>
+                </div>
+                <div className="post-info-likesView">
+                    <small><ThumbUpOutlinedIcon />&nbsp;<span>{post.likes}</span></small>
+                    <small><RemoveRedEyeIcon/>&nbsp;<span>{post.views}</span></small>
+                </div>
         </div>
     );
 }
 
-    const Posts = (props) => {
-        const post = props.posts.map((post) => {
-            return (
-                <RenderMenuItem post={post} onClick={props.onClick}/>
-            );
-        });
-        return(
-            <>
+
+const Posts = (props) => {
+    const post = props.posts.map((post) => {
+        return (
+            <RenderPosts post={post}/>
+        );
+    });
+    return(
+        <>
             <section class="category">
                     <div class="category_dropdown">
                         <details >

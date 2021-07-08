@@ -29,7 +29,8 @@
 .contact_form > .form_group{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 .contact_form > .form_group > span{
